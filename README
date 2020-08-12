@@ -1,0 +1,13 @@
+This is README for Omar radwan for cs118 project 2
+
+This project was extremely difficult and knowing where to start and having available resources for this project were very difficult. I had a very hard time finding relevant information and through reading the Pizzaa and all that, I feel that a lot of others had the same expereinces. Given more resources, clarity I feel I could've finished this project.
+
+I have not finished up to spec for two reasons. First of all, my program does NOT support packet loss, either through missed ACKS or timeouts. I could not find a way to impleement those in the time given, with all that is happening in mind.
+
+I would like to know how to implement timeotus, because the thing I'm thinking about is how is implementing the timeout given that the syscall for send and receive basically freeze the program till their responded to
+
+Currently as it stands, my program can transmit binary files up to large values reliabilty, and does correct SYN and FIN procedures. It does not however support packet loss. Another thing lacking is that my packet size was larger than the 524 that was in the spec. The reason for this was because I needed to fit a value for the payload size, for the last packet, as it would very rarely ever be exactly 512 bytes, and for this reason I needed to make my packet header larger to fit an int that would keep track of payload size.
+
+If I had to repeat this assignment, one thing I would do is definetly look more online at how UDP works comapred to TCP because that gave me a massive headache in the beginning. I also do believe however that the implementation spec given was very confusing, and I hope the TA and the instructor will be lenient in grading these as absoltely so much is happeneing and it's a shame this class could not at its full potential.
+
+I hope to present what I have learned and all this during DEMO, as I'm confident that this will not pass the autograder
